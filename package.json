@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "PORT=8000 next dev --turbopack",
-    "build": "next build && touch out/.nojekyll",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "export": "next export"
+    "lint": "next lint"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
