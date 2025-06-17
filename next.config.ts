@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: process.env.GITHUB_ACTIONS ? '/shafaf.ca' : '',
-  assetPrefix: process.env.GITHUB_ACTIONS ? '/shafaf.ca/' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '' : '',
   images: {
     unoptimized: true,
     domains: ['images.pexels.com'],
