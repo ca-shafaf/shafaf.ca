@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/shafaf.ca',
-  assetPrefix: '/shafaf.ca/',
+  basePath: process.env.NODE_ENV === 'production' ? '/shafaf.ca' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/shafaf.ca/' : '',
+  trailingSlash: true,
   images: {
     unoptimized: true,
     remotePatterns: [
