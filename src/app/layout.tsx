@@ -9,6 +9,24 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Shafaf - Chartered Accountant & Finance Professional",
   description: "Qualified Chartered Accountant and passionate finance professional with extensive experience in taxation, business consultancy, and financial advisory.",
+  keywords: [
+    "Chartered Accountant",
+    "Tax Planning",
+    "Business Consultancy",
+    "Financial Advisory",
+    "GST",
+    "Tax Compliance",
+    "Financial Education",
+    "Business Finance",
+    "Indian Taxation",
+    "Accounting Services"
+  ],
+  authors: [{ name: "Shafaf" }],
+  openGraph: {
+    title: "Shafaf - Chartered Accountant & Finance Professional",
+    description: "Expert in taxation, business consultancy, and financial advisory services",
+    type: "website",
+  },
 }
 
 export default function RootLayout({
