@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   output: 'export',
   basePath: '/shafaf.ca',
   assetPrefix: '/shafaf.ca/',
@@ -15,5 +15,3 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
 }
-
-export default nextConfig
