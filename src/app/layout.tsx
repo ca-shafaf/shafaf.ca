@@ -7,6 +7,7 @@ import Footer from "@/components/Footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ca-shafaf.github.io/shafaf.ca'),
   title: "Shafaf - Chartered Accountant & Finance Professional",
   description: "Qualified Chartered Accountant and passionate finance professional with extensive experience in taxation, business consultancy, and financial advisory.",
   keywords: [
