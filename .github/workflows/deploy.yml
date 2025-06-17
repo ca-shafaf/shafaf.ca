@@ -32,6 +32,11 @@ jobs:
       - name: Build with Next.js
         run: npm run build
 
+      - name: Copy CNAME and other files
+        run: |
+          cp public/CNAME out/
+          cp public/* out/ || true
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
