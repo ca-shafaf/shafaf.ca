@@ -1,8 +1,7 @@
-import type { NextConfig } from 'next'
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: 'export',
-  basePath: '/shafaf.ca',
+  basePath: process.env.NODE_ENV === 'production' ? '/shafaf.ca' : '',
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -13,6 +12,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  reactStrictMode: true,
+  trailingSlash: true,
 }
 
 export default nextConfig
